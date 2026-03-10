@@ -3,7 +3,7 @@
 Kubernetes observability stack using Prometheus and Grafana.
 
 ## Stack
-- Kubernetes (kind)
+- Kubernetes (docker-desktop)
 - Prometheus
 - Node Exporter
 - Grafana
@@ -19,3 +19,6 @@ Kubernetes observability stack using Prometheus and Grafana.
 ## Architecture diagram
 
 K8s → Prometheus → Grafana
+
+## Prometheus UI
+![prometheus ui](images/prometheus-ui.png)
