@@ -1,0 +1,23 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Kubernetes / Helm
+# (Ignore local development secrets or kubeconfigs)
+.kube/
+kubeconfig
+*.p12
+*.pem
+
+# Common logs and temp files
+*.log
+tmp/
+dist/
+node_modules/
