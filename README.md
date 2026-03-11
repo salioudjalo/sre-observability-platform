@@ -21,4 +21,4 @@ Kubernetes observability stack using Prometheus and Grafana.
 K8s → Prometheus → Grafana
 
 ## Prometheus UI
-![prometheus ui](images/prometheus-ui.png)
+![prometheus ui kubernetes](images/prometheus-ui-kub.png)
