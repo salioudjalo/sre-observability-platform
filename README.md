@@ -20,5 +20,6 @@ Kubernetes observability stack using Prometheus and Grafana.
 
 K8s → Prometheus → Grafana
 
-## Prometheus UI
+## Prometheus (ocalhost:9090)
 ![prometheus ui kubernetes](images/prometheus-ui-kub.png)
+![count by job up](images/count-by-job-up.png)
