@@ -137,6 +137,19 @@ Then open [http://localhost:3000](http://localhost:3000).
 |-------|---------|
 | High CPU | [runbooks/high-cpu.md](runbooks/high-cpu.md) |
 
+## Alerting
+
+The `HighCPUUsage` alert rule monitors CPU usage across all nodes. Below is the full alert lifecycle triggered by a CPU stress test pod.
+
+### Alert inactive (no issue)
+![Alert Inactive](images/alert-inactive.png)
+
+### Alert pending (condition met, waiting 2 minutes)
+![Alert Pending](images/alert-pending.png)
+
+### Alert firing (threshold exceeded for 2+ minutes)
+![Alert Firing](images/alert-firing.png)
+
 ## Screenshots
 
 ### Prometheus UI (localhost:9090)
@@ -147,3 +160,13 @@ Then open [http://localhost:3000](http://localhost:3000).
 Cluster overview dashboard visualizing system health and resource usage:
 
 ![Grafana Dashboard](images/grafana-dashboard.png)
+
+### Grafana CPU Usage Panel
+CPU usage percentage per node over time:
+
+![Grafana CPU Usage](images/grafana-cpu-usage.png)
+
+### CPU Stress Test Pod (Docker Desktop)
+Stress pod used to trigger the `HighCPUUsage` alert:
+
+![Docker Desktop CPU Stress Pod](images/docker-desktop-cpu-stress-pod.png)
